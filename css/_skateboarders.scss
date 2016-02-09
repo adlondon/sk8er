@@ -1,3 +1,59 @@
+.skateboarders {
+width:100%;
+position: relative;
+span {
+  display: block;
+  text-align: center;
+  color:  $offwhite;
+  font-family: arial-black;
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1;
+  }
+}
+
+
+.arrow-block {
+    position: absolute;
+    width: 160px;
+    height: 63px;
+    background-color:  $weirdred;
+    left: -32%;
+    top: 15.5%;
+    border-bottom: 3px solid  $transparentgray;
+    background-clip: padding-box;
+  }
+
+
+.arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid  $weirdred;
+    left: -9.5%;
+    z-index: -1;
+    top: 15.5%;
+
+  }
+.arrow-border {
+  @extend .arrow;
+  border-left: 30px solid  $transparentgray;
+  left: -9.5%;
+  z-index: -2;
+  top: 15.99%;
+  }
+
+#arrow-text {
+    position: absolute;
+    color:  $offwhite;
+    font-weight: normal;
+    left: -30.5%;
+    font-size: 1rem;
+    top: 23%;
+  }
+
 
 .col-1, .col-2{
   display: inline-block;
@@ -11,86 +67,57 @@
 
 .lance {
   display: inline-block;
-  position:relative;
   background-image: url(../images/sk8er-4.png);
   background-size: 146%;
-  width: 46.75%;
+  width: 48.36%;
   height: 50%;
   background-repeat: no-repeat;
   background-position-x: -95px;
   background-position-y: -11px;
-  border: 3px solid #fcfcfc;
-  box-shadow: 0px 3px rgba(144, 144, 142, 0.5);
-
+  border: 3px solid  $offwhite;
+  box-shadow: 0px 3px  $transparentgray;
+  span {
+    padding-top: 20%;
+  }
 }
 
 .rodney {
-  display: inline-block;
+  @extend .lance;
   background-image: url(../images/sk8er-3.png);
-  background-size: 146%;
-  width: 46.75%;
-  height: 50%;
-  background-repeat: no-repeat;
   background-position-x: -10px;
   background-position-y: -11px;
-  border: 3px solid #fcfcfc;
   margin-left: 11px;
-  box-shadow: 0px 3px rgba(144, 144, 142, 0.5);
 }
 
 .steve {
-  display: inline-block;
-  margin-top: 11px;
+  @extend .lance;
+  margin-top: 17px;
   background-image: url(../images/sk8er-1.png);
   background-size: 103%;
-  width: 98.25%;
-  height: 50%;
-  background-repeat: no-repeat;
+  width: 100%;
   background-position-x: 0px;
   background-position-y: -63px;
-  border: 3px solid #fcfcfc;
-  box-shadow: 0px 3px rgba(144, 144, 142, 0.5);
+  span {
+    padding-top: 13%;
+  }
 }
 
 .col-2 {
-  width: 30%;
+  width: 33%;
   height: 300px;
   vertical-align: top;
 }
 
 .tommy {
-  display: inline-block;
+  @extend .lance;
   background-image: url(../images/sk8er-2.png);
   background-size: 272%;
-  width: 104.5%;
+  width: 95.5%;
   height: 105.7%;
-  background-repeat: no-repeat;
   background-position-x: -296px;
   background-position-y: 0px;
-  margin-left: 8px;
-  border: 3px solid #fcfcfc;
-  box-shadow: 0px 3px rgba(144, 144, 142, 0.5);
-}
-
-.skateboarders span {
-  display: block;
-  text-align: center;
-  color: #fcfcfc;
-  font-family: arial-black;
-  font-size: 1.75rem;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.lance span, .rodney span {
-  padding-top: 20%;
-}
-
-.steve span {
-
-  padding-top: 13%;
-}
-
-.tommy span {
-  padding-top:57%;
+  margin-left: 11px;
+  span {
+    padding-top:57%;
+  }
 }

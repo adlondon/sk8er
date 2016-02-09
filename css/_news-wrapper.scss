@@ -1,29 +1,32 @@
-#skatenews {
-  margin-left:0;
-}
+
 
 .box {
   display: inline-block;
-  background-color:#fcfcfc;
+  background-color: $offwhite;
   width: 31.85%;
   vertical-align: top;
   margin-top:5%;
   min-height:240px;
   border-bottom: 3px solid rgba(144, 144, 142, 0.5);
   background-clip: padding-box;
+  h2 {
+    margin: 7%;
+    font-weight: 400;
+    font-size: 1rem;
+    min-height:55px;;
+  }
+  p {
+    margin:7%;
+    font-size: .5rem;
+    height: 86px;
+  }
+  a {
+    margin: auto;
+    color:  $weirdred;
+  }
+
 }
 
-.box h2 {
-  margin: 7%;
-  font-weight: 400;
-  font-size: 1rem;
-  min-height:55px;;
-}
-.box p {
-  margin:7%;
-  font-size: .5rem;
-  height: 86px;
-}
 
 #middle-box {
   margin: 5% 1.5%;
@@ -34,17 +37,8 @@
   color: lightgray;
   margin-left:7%;
 }
-.box a {
-  margin: auto;
-  color: #B4292E;
-}
 
 .read-more {
   text-align: center;
   padding: 11px;
-}
-
-.skateboarders {
-width:100%;
-position: relative;
 }

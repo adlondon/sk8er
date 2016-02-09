@@ -1,5 +1,6 @@
 * {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  box-sizing: border-box; }
 
 body {
   background-size: cover;
@@ -10,31 +11,33 @@ a {
   color: #fcfcfc; }
 
 .container {
-  width: 52%;
+  width: 712px;
   margin: auto; }
 
 .header-top {
   text-align: right; }
 
-.header-top .social-icons {
+.social-icons, .social-icons li {
   margin: 1% 0 0 0;
   display: inline-block;
   vertical-align: middle; }
 
-.header-top .social-icons li {
-  display: inline-block;
-  vertical-align: middle; }
+.social-icons li {
+  margin: 0; }
 
-.header-top .social-icons li img {
+.social-icons li img {
   width: 40px;
   height: 40px;
   border-bottom: 3px solid rgba(144, 144, 142, 0.5);
   background-clip: padding-box; }
 
-.header-top .social-icons #subscribe {
+#contact {
+  margin-right: 0; }
+
+#subscribe {
   font-size: 0.6rem; }
 
-.header-top .social-icons #dot {
+#dot, #five-dots {
   font-size: 1.5rem;
   vertical-align: top;
   padding-top: 0.1rem;
@@ -43,13 +46,11 @@ a {
   color: #fcfcfc;
   font-family: Serif; }
 
-.header-top .social-icons #five-dots {
+#five-dots {
   transform: rotate(-90deg);
-  font-size: 1.5rem;
-  color: #fcfcfc;
-  font-family: Serif;
-  padding-left: 9px;
-  margin-right: -9px; }
+  padding: 0 0 9px 9px;
+  margin-right: -9px;
+  vertical-align: bottom; }
 
 nav {
   width: 100%;
@@ -62,7 +63,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   background-color: #B4292E;
-  width: 23.4%;
+  width: 24.19%;
   text-align: center;
   font-weight: 100;
   font-size: .65rem;
@@ -71,7 +72,10 @@ nav ul li {
   background-clip: padding-box;
   padding: .2em; }
 
-nav ul .dash {
+#skatenews {
+  margin-left: 0; }
+
+.dash {
   font-weight: 400;
   font-size: 1rem; }
 
@@ -95,24 +99,33 @@ nav ul .dash {
 
 #overlay-grid {
   position: absolute;
-  width: 143%; }
+  width: 100%; }
 
 #overlay-grid img {
   width: 100%;
   opacity: .4; }
 
 .hero {
-  width: 96.5%;
-  max-height: 192px;
+  width: 100%;
+  max-height: 247px;
   display: block;
   border: 8px solid white;
   overflow: hidden; }
 
-.hero-img {
+.hero img {
   width: 25%;
   float: left;
   position: relative;
   z-index: -1; }
+
+figure {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  animation: 10s slide infinite;
+  min-height: 234px; }
 
 @keyframes slide {
   0% {
@@ -130,21 +143,7 @@ nav ul .dash {
   75% {
     left: -300%; }
   95% {
-    left: -300%; }
-  100% {
-    left: -400%; } }
-
-figure {
-  position: relative;
-  width: 400%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  animation: 10s slide infinite;
-  min-height: 234px; }
-
-#skatenews {
-  margin-left: 0; }
+    left: -300%; } }
 
 .box {
   display: inline-block;
@@ -167,6 +166,10 @@ figure {
   font-size: .5rem;
   height: 86px; }
 
+.box a {
+  margin: auto;
+  color: #B4292E; }
+
 #middle-box {
   margin: 5% 1.5%; }
 
@@ -175,10 +178,6 @@ figure {
   color: lightgray;
   margin-left: 7%; }
 
-.box a {
-  margin: auto;
-  color: #B4292E; }
-
 .read-more {
   text-align: center;
   padding: 11px; }
@@ -186,70 +185,6 @@ figure {
 .skateboarders {
   width: 100%;
   position: relative; }
-
-.col-1, .col-2 {
-  display: inline-block; }
-
-.col-1 {
-  width: 66%;
-  height: 300px; }
-
-.lance {
-  display: inline-block;
-  position: relative;
-  background-image: url(../images/sk8er-4.png);
-  background-size: 146%;
-  width: 46.75%;
-  height: 50%;
-  background-repeat: no-repeat;
-  background-position-x: -95px;
-  background-position-y: -11px;
-  border: 3px solid #fcfcfc;
-  box-shadow: 0px 3px rgba(144, 144, 142, 0.5); }
-
-.rodney {
-  display: inline-block;
-  background-image: url(../images/sk8er-3.png);
-  background-size: 146%;
-  width: 46.75%;
-  height: 50%;
-  background-repeat: no-repeat;
-  background-position-x: -10px;
-  background-position-y: -11px;
-  border: 3px solid #fcfcfc;
-  margin-left: 11px;
-  box-shadow: 0px 3px rgba(144, 144, 142, 0.5); }
-
-.steve {
-  display: inline-block;
-  margin-top: 11px;
-  background-image: url(../images/sk8er-1.png);
-  background-size: 103%;
-  width: 98.25%;
-  height: 50%;
-  background-repeat: no-repeat;
-  background-position-x: 0px;
-  background-position-y: -63px;
-  border: 3px solid #fcfcfc;
-  box-shadow: 0px 3px rgba(144, 144, 142, 0.5); }
-
-.col-2 {
-  width: 30%;
-  height: 300px;
-  vertical-align: top; }
-
-.tommy {
-  display: inline-block;
-  background-image: url(../images/sk8er-2.png);
-  background-size: 272%;
-  width: 104.5%;
-  height: 105.7%;
-  background-repeat: no-repeat;
-  background-position-x: -296px;
-  background-position-y: 0px;
-  margin-left: 8px;
-  border: 3px solid #fcfcfc;
-  box-shadow: 0px 3px rgba(144, 144, 142, 0.5); }
 
 .skateboarders span {
   display: block;
@@ -260,24 +195,107 @@ figure {
   font-weight: 800;
   line-height: 1; }
 
-.lance span, .rodney span {
+.arrow-block {
+  position: absolute;
+  width: 160px;
+  height: 63px;
+  background-color: #B4292E;
+  left: -32%;
+  top: 15.5%;
+  border-bottom: 3px solid rgba(144, 144, 142, 0.5);
+  background-clip: padding-box; }
+
+.arrow, .arrow-border {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #B4292E;
+  left: -9.5%;
+  z-index: -1;
+  top: 15.5%; }
+
+.arrow-border {
+  border-left: 30px solid rgba(144, 144, 142, 0.5);
+  left: -9.5%;
+  z-index: -2;
+  top: 15.99%; }
+
+#arrow-text {
+  position: absolute;
+  color: #fcfcfc;
+  font-weight: normal;
+  left: -30.5%;
+  font-size: 1rem;
+  top: 23%; }
+
+.col-1, .col-2 {
+  display: inline-block; }
+
+.col-1 {
+  width: 66%;
+  height: 300px; }
+
+.lance, .rodney, .steve, .tommy {
+  display: inline-block;
+  background-image: url(../images/sk8er-4.png);
+  background-size: 146%;
+  width: 48.36%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position-x: -95px;
+  background-position-y: -11px;
+  border: 3px solid #fcfcfc;
+  box-shadow: 0px 3px rgba(144, 144, 142, 0.5); }
+
+.lance span, .rodney span, .steve span, .tommy span {
   padding-top: 20%; }
+
+.rodney {
+  background-image: url(../images/sk8er-3.png);
+  background-position-x: -10px;
+  background-position-y: -11px;
+  margin-left: 11px; }
+
+.steve {
+  margin-top: 17px;
+  background-image: url(../images/sk8er-1.png);
+  background-size: 103%;
+  width: 100%;
+  background-position-x: 0px;
+  background-position-y: -63px; }
 
 .steve span {
   padding-top: 13%; }
+
+.col-2 {
+  width: 33%;
+  height: 300px;
+  vertical-align: top; }
+
+.tommy {
+  background-image: url(../images/sk8er-2.png);
+  background-size: 272%;
+  width: 95.5%;
+  height: 105.7%;
+  background-position-x: -296px;
+  background-position-y: 0px;
+  margin-left: 11px; }
 
 .tommy span {
   padding-top: 57%; }
 
 .boards {
   width: 100%;
+  padding: 2px 0;
   background-color: #fcfcfc;
   margin: 54px auto;
   border-bottom: 3px solid rgba(144, 144, 142, 0.5);
   background-clip: padding-box; }
 
 .boards img {
-  width: 5.48%;
+  width: 9.43%;
   padding: 13px;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -292,15 +310,12 @@ figure {
   -o-transform: scale(1.2);
   transform: scale(1.2); }
 
-.boards .biggerimg:hover {
+.boards img.biggerimg:hover {
   -webkit-transform: scale(1.17);
   -moz-transform: scale(1.17);
   -ms-transform: scale(1.17);
   -o-transform: scale(1.17);
   transform: scale(1.17); }
-
-#contact {
-  margin-right: 0; }
 
 .contact {
   width: 100%;
@@ -322,7 +337,6 @@ figure {
 
 .left-col p {
   font-size: .6rem;
-  /*padding: 4%;*/
   margin: 0 auto;
   line-height: 2; }
 
@@ -339,24 +353,20 @@ figure {
 .right-col {
   display: inline-block;
   padding: 4%;
-  width: 32.3%;
+  width: 48.38%;
   vertical-align: top;
   text-align: right; }
 
-input {
-  width: 92%;
+input, textarea {
+  width: 100%;
   font-size: .7em;
   padding: 3%;
   margin-top: 5px; }
 
 textarea {
-  width: 92.75%;
-  font-size: .7em;
-  padding: 3%;
-  border: 1px solid gainsboro;
-  margin-top: 5px; }
+  border: 1px solid gainsboro; }
 
-input[type="submit"] {
+input[type="submit"], textarea[type="submit"] {
   width: 50%;
   color: #fcfcfc;
   background-color: #B4292E;
@@ -375,30 +385,6 @@ input[type="submit"] {
     width: 100%;
     margin: auto; }
   .header-top {
-    display: block;
-    margin: auto;
-    width: 100%; }
-  .header-top .social-icons {
-    margin: 1% 0 0 0;
-    display: block;
-    vertical-align: middle;
-    text-align: center;
-    padding: 0; }
-  .header-top .social-icons ul {
-    padding: 0; }
-  .header-top .social-icons li {
-    display: inline-block;
-    vertical-align: middle; }
-  .header-top .social-icons li img {
-    width: 2rem;
-    height: 2rem;
-    border-bottom: 1px solid rgba(144, 144, 142, 0.5);
-    background-clip: padding-box; }
-  .header-top .social-icons #subscribe {
-    font-size: 1.5rem; }
-  .header-top .social-icons #dot {
-    display: none; }
-  .header-top .social-icons #five-dots {
     display: none; }
   nav {
     width: 100%;
@@ -452,7 +438,7 @@ input[type="submit"] {
     display: inline-block; }
   .skateboarders .col-2 {
     margin-top: 120px; }
-  .skateboarders .lance, .skateboarders .steve, .skateboarders .tommy, .skateboarders .rodney {
+  .skateboarders .lance, .skateboarders .rodney, .skateboarders .steve, .skateboarders .tommy, .skateboarders .steve, .skateboarders .tommy, .skateboarders .rodney {
     width: 99%;
     height: 219px;
     display: inline-block;
@@ -460,7 +446,7 @@ input[type="submit"] {
     background-size: cover;
     background-position-x: 0px;
     background-position-y: 0px; }
-  .skateboarders #arrow-text, .skateboarders .arrow-block, .skateboarders .arrowborder, .skateboarders .arrow {
+  .skateboarders #arrow-text, .skateboarders .arrow-block, .skateboarders .arrowborder, .skateboarders .arrow, .skateboarders .arrow-border {
     display: none;
     padding-top: 0; }
   .skateboarders span {

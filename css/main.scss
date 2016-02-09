@@ -1,5 +1,6 @@
 * {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  box-sizing: border-box; }
 
 body {
   background-size: cover;
@@ -10,9 +11,9 @@ a {
   color: #fcfcfc; }
 
 .container {
-  width: 52%;
+  width: 712px;
   margin: auto; }
-
+@import 'variables';
 @import 'header';
 @import 'slider';
 @import 'news-wrapper';

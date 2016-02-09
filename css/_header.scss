@@ -1,43 +1,51 @@
 .header-top {
   text-align:right;
-  .social-icons {
-    margin: 1% 0 0 0;
-    display: inline-block;
-    vertical-align: middle;
-   li {
-    display:inline-block;
-    vertical-align: middle;
-      img {
-        width: 40px;
-        height: 40px;
-        border-bottom: 3px solid rgba(144, 144, 142, 0.5);
-        background-clip: padding-box;
-      }
-    }
-    #subscribe {
-      font-size: 0.6rem;
-    }
-    #dot {
-      font-size: 1.5rem;
-      vertical-align: top;
-      padding-top: 0.1rem;
-      padding-right: 5rem;
-      padding-left: .5em;
-      color: #fcfcfc;
-      font-family: Serif;
-    }
+}
 
-    #five-dots {
-      transform: rotate(-90deg);
-      font-size: 1.5rem;
-      color: #fcfcfc;
-      font-family: Serif;
-      padding-left: 9px;
-      margin-right: -9px;
-
+.social-icons {
+  margin: 1% 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  li {
+    @extend .social-icons;
+    margin: 0;
+    img {
+      width: 40px;
+      height: 40px;
+      border-bottom: 3px solid rgba(144, 144, 142, 0.5);
+      background-clip: padding-box;
     }
   }
 }
+
+#contact {
+  margin-right:0;
+}
+
+
+#subscribe {
+  font-size: 0.6rem;
+}
+
+#dot {
+  font-size: 1.5rem;
+  vertical-align: top;
+  padding-top: 0.1rem;
+  padding-right: 5rem;
+  padding-left: .5em;
+  color:  $offwhite;
+  font-family: Serif;
+}
+
+#five-dots {
+  @extend #dot;
+  transform: rotate(-90deg);
+  padding: 0 0 9px 9px;
+  margin-right: -9px;
+  vertical-align: bottom;
+
+}
+
 
 
 nav {
@@ -48,8 +56,8 @@ nav {
     margin:auto;
     li {
       display: inline-block;
-      background-color: #B4292E;
-      width: 23.4%;
+      background-color:  $weirdred;
+      width: 24.19%;
       text-align: center;
       font-weight: 100;
       font-size: .65rem;
@@ -58,10 +66,14 @@ nav {
       background-clip: padding-box;
       padding: .2em;
     }
-
-    .dash {
-      font-weight: 400;
-      font-size: 1rem;
-    }
   }
+}
+
+#skatenews {
+  margin-left:0;
+}
+
+.dash {
+  font-weight: 400;
+  font-size: 1rem;
 }
