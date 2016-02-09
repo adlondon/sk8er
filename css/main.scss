@@ -1,0 +1,22 @@
+* {
+  font-family: sans-serif; }
+
+body {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bg.jpg"); }
+
+a {
+  text-decoration: none;
+  color: #fcfcfc; }
+
+.container {
+  width: 52%;
+  margin: auto; }
+
+@import 'header';
+@import 'slider';
+@import 'news-wrapper';
+@import 'skateboarders';
+@import 'boards';
+@import 'contact';
+@import 'responsive';

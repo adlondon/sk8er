@@ -1,0 +1,67 @@
+.slider {
+position:relative;
+overflow: hidden;
+border-bottom: 3px solid rgba(144, 144, 142, 0.5);
+background-clip: padding-box;
+max-height:250px;
+width: 100%;
+}
+#overlay-logo {
+  height:100%;
+  width: 30%;
+}
+
+#overlay-logo img {
+  position: absolute;
+  width: 42%;
+  top: 19%;
+  left: 3%;
+
+}
+
+#overlay-grid {
+  position: absolute;
+  width: 143%;
+}
+
+#overlay-grid img {
+  width:100%;
+  opacity: .4;
+}
+.hero {
+  width: 96.5%;
+  max-height: 192px;
+  display:block;
+  border: 8px solid white;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 25%;
+  float: left;
+  position: relative;
+  z-index: -1;
+}
+
+
+
+@keyframes slide {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%;}
+}
+figure {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  animation: 10s slide infinite;
+  min-height:234px;
+}

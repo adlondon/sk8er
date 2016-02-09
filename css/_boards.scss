@@ -1,0 +1,34 @@
+
+.boards {
+  width: 100%;
+  background-color: #fcfcfc;
+  margin: 54px auto;
+  border-bottom: 3px solid rgba(144, 144, 142, 0.5);
+  background-clip: padding-box;
+}
+
+.boards img {
+  width: 5.48%;
+  padding: 13px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.boards img:hover {
+  -webkit-transform:scale(1.2);
+-moz-transform:scale(1.2);
+-ms-transform:scale(1.2);
+-o-transform:scale(1.2);
+ transform:scale(1.2);
+}
+
+.boards .biggerimg:hover {
+-webkit-transform:scale(1.17);
+-moz-transform:scale(1.17);
+-ms-transform:scale(1.17);
+-o-transform:scale(1.17);
+ transform:scale(1.17);
+}
