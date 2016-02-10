@@ -1,0 +1,17 @@
+@media (min-width: 0px) and (max-width: 320px) {
+#overlay-logo img {
+  position: absolute;
+  width: 76%;
+  top:17%;
+  left: 12%;
+}
+
+
+.hero {
+  width: 100%;
+  max-height: 200px;
+  display: block;
+  border: 8px solid white;
+  overflow: hidden;
+}
+}
